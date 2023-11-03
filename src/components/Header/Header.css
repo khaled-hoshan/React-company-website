@@ -1,0 +1,41 @@
+.app__aboutus {
+  position: relative;
+}
+
+.app__aboutus-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.app__aboutus-overlay img {
+  width: 80rem;
+  height: 32rem;
+  z-index: 0;
+}
+
+.app__aboutus-overlay h1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (min-width: 2000px) {
+    .app__aboutus-overlay img {
+        width: 80%;
+        height: 320px;
+      }
+}
+
+@media screen and (max-width: 900px) {
+    .app__aboutus-overlay img {
+        width: 80%;
+        height: 320px;
+      }
+}
+
+@media screen and (max-width: 650px) {
+  .app__aboutus-overlay img {
+    width: 80%;
+    height: 320px;
+  }
+}
