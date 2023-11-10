@@ -1,8 +1,14 @@
-.header {
+.app__header {
   background-color: var(--color-darkblue);
+  background-image: url(../../assets/Header-photo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  min-height: 100vh;
 }
 
-.header h1 {
+.app__header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +17,7 @@
   font-weight: 20;
 }
 
-.header h1 span {
+.app__header h1 span {
   color: var(--color-yellow);
 }
 
@@ -36,20 +42,22 @@
 form {
   width: 350px;
 
- background-color: #f9f9f9;
- padding: 20px;
- border-radius: 5px;
- box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
-input[type="text"], input[type="email"], input[type="password"] {
- width: 100%;
- padding: 12px;
- margin: 8px 0;
- display: inline-block;
- border: 1px solid #ccc;
- box-sizing: border-box;
- border-radius: 5px;
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
 /* input[type="submit"] {
@@ -72,3 +80,50 @@ input[type="text"], input[type="email"], input[type="password"] {
  font-size: 12px;
  margin-top: 5px;
 } */
+
+@media screen and (max-width: 1150px) {
+  .app__header {
+    min-height: 40vh;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .app__header {
+    min-height: 40vh;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .app__header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    font-weight: 20;
+  }
+
+  .app__header {
+    background-color: var(--color-darkblue);
+    background-image: none;
+    min-height: 40vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app__header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 20;
+  }
+
+  .app__header {
+    background-color: var(--color-darkblue);
+    background-image: none;
+    min-height: 40vh;
+  }
+}

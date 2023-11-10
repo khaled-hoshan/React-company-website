@@ -1,19 +1,11 @@
 .section__padding {
-  padding: 1rem 6rem;
+  padding: 0rem 6rem;
 }
 
 .flex__center {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.app__bg {
-  background: var(--color-darkblue);
-  background-position: center;
-  background-size: contain;
-  background-repeat: repeat;
-  background-attachment: fixed;
 }
 
 .app__wrapper {
@@ -44,7 +36,7 @@
 }
 
 .app__wrapper_img-reverse {
-  justify-content: flex-start;
+  justify-content: flex-end;
   margin-right: 2rem;
 }
 
