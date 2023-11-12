@@ -1,0 +1,131 @@
+.app__footer {
+  background: var(--color-darkblue);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.app__footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.app__footer-paymethods {
+  margin-left: 100px;
+}
+
+.app__footer-paymethods img {
+  width: 27rem;
+}
+
+.app__footer-Links {
+  display: grid;
+  justify-items: start;
+  color: white;
+  margin-bottom: 219px;
+}
+
+.app__footer-Links a {
+  margin-bottom: 10px;
+}
+
+.app__footer-Links a:hover {
+  color: var(--color-golden);
+}
+
+.app__footer-logo {
+  display: grid;
+  justify-items: center;
+  margin-right: 100px;
+}
+
+.app__footer h1 {
+  color: white;
+}
+
+.app__footer p {
+  color: white;
+}
+
+.dash {
+  height: 3px;
+  width: 40px;
+  background-color: var(--color-golden);
+  margin-bottom: 20px;
+}
+
+.copyright {
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1150px) {
+  .app__footer {
+    flex-direction: column;
+    background: var(--color-darkblue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 47vh;
+  }
+  .app__footer-logo {
+    display: grid;
+    justify-items: center;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .app__footer p {
+    color: white;
+    width: 300px;
+  }
+  .app__footer-logo {
+    display: grid;
+    justify-items: center;
+    margin-right: 0px;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+}
+
+@media screen and (max-width: 450px) {
+  .app__footer-content {
+    display: grid;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  .app__footer-paymethods {
+    margin-left: 0px;
+  }
+  .app__footer-Links {
+    display: grid;
+    justify-items: start;
+    color: white;
+    margin-bottom: 25px;
+  }
+  .app__footer-logo {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 30px;
+  }
+  .copyright {
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+  .app__footer-paymethods img {
+    width: 20rem;
+  }
+}

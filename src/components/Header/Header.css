@@ -40,12 +40,23 @@
 }
 
 form {
-  width: 350px;
+  height: 330px;
+  width: 290px;
 
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+form h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  color: var(--color-darkblue);
+  text-decoration: underline;
+  text-decoration-color: var(--color-darkblue);
 }
 
 input[type='text'],
@@ -58,6 +69,11 @@ input[type='password'] {
   border: 1px solid #ccc;
   box-sizing: border-box;
   border-radius: 5px;
+}
+.input-icon{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* input[type="submit"] {
@@ -92,7 +108,6 @@ input[type='password'] {
     min-height: 40vh;
   }
 }
-
 
 @media screen and (max-width: 650px) {
   .app__header h1 {

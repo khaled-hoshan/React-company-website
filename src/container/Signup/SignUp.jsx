@@ -7,14 +7,19 @@ export default function SignUp() {
       <div className='app__wrapper_img app__wrapper_img-reverse'>
         <img src={images.Friendly_user_Infograph} alt='higher_man_psd' />
       </div>
-      <div className='app__wrapper_info'>
-      
+      <div className='app__signin app__wrapper_info'>
         <h1 className='headtext'>
-          <span>Sign Up</span>
+          <span>User-friendly, fast and dynamic panel?</span>
         </h1>
         <p className='p__opensans'>
-          We offer a wide range of services to help you manage your budget.
+          We are always with you for all your questions and problems. Our
+          priority is our customer satisfaction. We always protect your customer
+          privacy data.
         </p>
+
+        <button>
+          Sign Up
+        </button>
       </div>
     </div>
   );

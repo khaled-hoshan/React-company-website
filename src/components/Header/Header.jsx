@@ -1,6 +1,6 @@
 import React from 'react';
-import images from '../../constants/images';
 import './Header.css';
+
 export default function Header() {
   return (
     <div className='app__header'>
@@ -10,18 +10,30 @@ export default function Header() {
         </h1>
       </div>
 
-      <div className='app__header-form app__wrapper_img'>
+      <div className='app__header-form'>
         <form className='form'>
-          <label>
-            <input type='text' name='name' placeholder='' />
-          </label>
-          <label>
-            <input type='email' name='email' placeholder='' />
-          </label>
+          <h3>Login please</h3>
+          <div className='input-icon'>
+          <i class="fa-regular fa-envelope" style={{width:'20px'}}></i>
+            <div style={{ height: '40px', width: '3px', color: 'red' }} />
+            <input
+              type='text'
+              name='userId'
+              placeholder='Input your user ID or Email'
+            />
+          </div>
+
+          <div>
+            <input
+              type='password'
+              name='password'
+              placeholder='Input your password'
+            />
+          </div>
+
           <button type='submit'>Submit</button>
         </form>
       </div>
-
     </div>
   );
 }

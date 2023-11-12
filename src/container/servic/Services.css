@@ -14,6 +14,17 @@
   min-height: 50vh;
 }
 
+.app__p {
+  color: #575654;
+}
+
+.app__wrapper_info button {
+  background: black;
+  color: white;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+}
 .app__services_img {
   flex: 1;
   width: 100%;
@@ -37,8 +48,8 @@
 @media screen and (max-width: 1150px) {
   .app__services {
     flex-direction: column;
+    min-height: 104vh;
   }
-
   .app__services_img {
     margin: 5rem 0 0 0;
   }
@@ -49,5 +60,14 @@
 
   .app__services_img img {
     width: 100%;
+    margin-top: 0;
+    margin-bottom: -143px;
   }
+}
+
+@media screen and (max-width: 450px) {
+  .app__services {
+    flex-direction: column;                 
+    min-height: 99vh;
+  }                                                                   
 }
