@@ -45,6 +45,15 @@
   margin-top: -68px;
 }
 
+.services-headtext {
+  font-weight: bolder;
+  font-size: 55px;
+}
+
+.services-headtext span {
+  color: var(--color-darkblue);
+}
+
 @media screen and (max-width: 1150px) {
   .app__services {
     flex-direction: column;
@@ -69,5 +78,12 @@
   .app__services {
     flex-direction: column;                 
     min-height: 99vh;
-  }                                                                   
+  }              
+  .services-headtext {
+    font-weight: bolder;
+    font-size: 36px;
+  }
+  .services-headtext span {
+    color: white;
+  }
 }

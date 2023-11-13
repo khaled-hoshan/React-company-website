@@ -6,7 +6,7 @@ export default function Services() {
   return (
     <div className='app__services section__padding'>
       <div className='app__wrapper_info'>
-        <h1 className='headtext'>
+        <h1 className='services-headtext'>
           <span>
             Your Ultimate Destination for Premier Social Media Services
           </span>

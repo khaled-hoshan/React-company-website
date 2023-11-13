@@ -32,15 +32,23 @@
   align-items: center;
 }
 
-.header__social-content form {
+/* .header__social-content form {
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: 40px;
+} */
+
+.app__header-form {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 30px;
+  margin-right: 100px;
 }
 
 form {
-  height: 330px;
+  height: 390px;
   width: 290px;
 
   background-color: #f9f9f9;
@@ -66,14 +74,62 @@ input[type='password'] {
   padding: 12px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: none;
   box-sizing: border-box;
   border-radius: 5px;
 }
-.input-icon{
+.input-icon {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-radius: 13px;
+  border-left: 3px solid #0d1f2b;
+  margin-bottom: 20px;
+}
+
+.custom-icon {
+  width: 32px;
+  height: 32px;
+  margin-left: 17px;
+}
+
+.Form-dash {
+  width: 3px;
+  height: 29px;
+  background: var(--color-darkblue);
+  margin: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.forgotpassword {
+  text-decoration: underline;
+  color: var(--color-darkblue);
+}
+
+.rememberme input {
+  margin-right: 5px;
+}
+
+.submitbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.submitbtn button {
+  background: var(--color-darkblue);
+  color: white;
+  width: 80px;
+  height: 31px;
+  border-radius: 5px;
+  font-weight: bolder;
 }
 
 /* input[type="submit"] {
@@ -139,6 +195,14 @@ input[type='password'] {
   .app__header {
     background-color: var(--color-darkblue);
     background-image: none;
-    min-height: 40vh;
+    min-height: 60vh;
+  }
+
+  .app__header-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    width: 85%;
   }
 }

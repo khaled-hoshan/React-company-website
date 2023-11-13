@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaEnvelope, FaKey } from 'react-icons/fa';
 import './Header.css';
 
 export default function Header() {
@@ -14,8 +15,8 @@ export default function Header() {
         <form className='form'>
           <h3>Login please</h3>
           <div className='input-icon'>
-          <i class="fa-regular fa-envelope" style={{width:'20px'}}></i>
-            <div style={{ height: '40px', width: '3px', color: 'red' }} />
+            <FaEnvelope className='custom-icon' />
+            <div className='Form-dash' />
             <input
               type='text'
               name='userId'
@@ -23,7 +24,9 @@ export default function Header() {
             />
           </div>
 
-          <div>
+          <div className='input-icon'>
+            <FaKey className='custom-icon' />
+            <div className='Form-dash' />
             <input
               type='password'
               name='password'
@@ -31,7 +34,18 @@ export default function Header() {
             />
           </div>
 
-          <button type='submit'>Submit</button>
+          <div className='buttons'>
+            <label className='rememberme' href='#!'>
+              <input type='checkbox' />
+              Remember me
+            </label>
+            <a className='forgotpassword' href='#!'>
+              Forgot Password?
+            </a>
+          </div>
+          <div className='submitbtn'>
+            <button type='submit'>LOG IN</button>
+          </div>
         </form>
       </div>
     </div>
